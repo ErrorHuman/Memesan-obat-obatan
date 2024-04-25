@@ -9,31 +9,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apteca.OrdersPlaced">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="1000.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.apteca.OrdersPlaced">
     <AnchorPane prefHeight="87.0" prefWidth="1000.0" style="-fx-background-color: #44944A;">
         <Label layoutX="360.0" layoutY="15.0" style="-fx-background-color: #44944A;" text="Заказ лекарств">
             <font>
-                <Font name="System Italic" size="41.0" />
+                <Font name="System Italic" size="41.0"/>
             </font>
         </Label>
-      <Button fx:id="backButton" layoutX="53.0" layoutY="18.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="65.0" rotate="180.0" style="-fx-background-color: #44944A;">
-         <graphic>
-            <ImageView fitHeight="52.0" fitWidth="65.0">
-               <image>
-                  <Image url="@../../../pngwing.com.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
+        <Button fx:id="backButton" layoutX="53.0" layoutY="18.0" mnemonicParsing="false" prefHeight="52.0"
+                prefWidth="65.0" rotate="180.0" style="-fx-background-color: #44944A;">
+            <graphic>
+                <ImageView fitHeight="52.0" fitWidth="65.0">
+                    <Image url="@../../../pngwing.com.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
     </AnchorPane>
     <TableView fx:id="ordersPlaced" layoutX="14.0" layoutY="174.0" prefHeight="200.0" prefWidth="673.0">
         <columns>
-            <TableColumn fx:id="login" prefWidth="136.0" text="Логин" />
-            <TableColumn fx:id="medicines" minWidth="0.0" prefWidth="118.0" text="Товар" />
-            <TableColumn fx:id="quantity" prefWidth="150.0" text="кол-во" />
-            <TableColumn fx:id="totalPrice" prefWidth="130.0" text="Итоговая цена" />
-            <TableColumn fx:id="orderTime" prefWidth="138.0" text="Дата и время" />
+            <TableColumn fx:id="login" prefWidth="136.0" text="Логин"/>
+            <TableColumn fx:id="medicines" minWidth="0.0" prefWidth="118.0" text="Товар"/>
+            <TableColumn fx:id="quantity" prefWidth="150.0" text="кол-во"/>
+            <TableColumn fx:id="totalPrice" prefWidth="130.0" text="Итоговая цена"/>
+            <TableColumn fx:id="orderTime" prefWidth="138.0" text="Дата и время"/>
         </columns>
     </TableView>
-   <Button fx:id="checkOrders" layoutX="289.0" layoutY="400.0" mnemonicParsing="false" text="Посмотреть заказы" />
+    <Button fx:id="checkOrders" layoutX="289.0" layoutY="400.0" mnemonicParsing="false" text="Посмотреть заказы"/>
 </AnchorPane>

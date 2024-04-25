@@ -61,6 +61,7 @@ public class EntryController {
             throw new RuntimeException(e);
         }
     }
+
     private void loadWindow(String fxmlFileName, Button button) {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFileName));
         Parent parent;

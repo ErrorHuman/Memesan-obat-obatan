@@ -17,8 +17,25 @@ public class Order {
         this.quantity = quantity;
         this.totalPrice = totalPrice;
     }
+
     public LocalDateTime getOrderTime() {
         return orderTime;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getMedicines() {
+        return medicines;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
     }
 }
 

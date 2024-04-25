@@ -28,7 +28,6 @@ public class OrdersPlaced {
     @FXML
     private Button checkOrders;
 
-
     @FXML
     private Button backButton;
 
@@ -52,7 +51,7 @@ public class OrdersPlaced {
 
     @FXML
     void initialize() {
-        checkOrders.setOnAction(event ->buttonCheckOrders() );
+        checkOrders.setOnAction(event -> buttonCheckOrders());
         backButton.setOnAction(event -> backButton());
     }
 
@@ -120,6 +119,7 @@ public class OrdersPlaced {
             throw new RuntimeException("Ошибка при переходе на предыдущее окно", e);
         }
     }
+
     private void buttonCheckOrders() {
         String loggedInUsername = UserSession.getLoggedInUsername();
         List<Order> orders = DataByLoginFromDatabase(loggedInUsername);

@@ -147,6 +147,7 @@ public class UserWindow {
 
         return quantityColumn;
     }
+
     private void initializeCartTable() {
         cartTitleColumn.setCellValueFactory(cellData -> cellData.getValue().titleProperty());
         cartCostColumn.setCellValueFactory(cellData -> cellData.getValue().costProperty().asObject());
@@ -177,7 +178,8 @@ public class UserWindow {
         cartTable.setItems(cartItems);
         Platform.runLater(() -> cartTable.refresh());
     }
-    private void buttonOrdersPlaced(){
+
+    private void buttonOrdersPlaced() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("orders-placed.fxml"));
             Parent parent = loader.load();
@@ -189,6 +191,7 @@ public class UserWindow {
             throw new RuntimeException("Ошибка при переходе на предыдущее окно", e);
         }
     }
+
     private void openOrderWindow() {
         Connection connection = DataBase.getConnection();
         if (connection != null) {
